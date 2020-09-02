@@ -45,12 +45,12 @@ class Form extends React.Component {
                 <div className = "down">
                 <TermsField input={terms} onType={this.onType} />
                 </div>
+                <SignUpButton />
                 <DividerField input={divider} onType={this.onType} />
                 <div className ="or2">
                 <OrField input={or} onType={this.onType} />
                 </div>
                 <AlternativeSignupField input={alternative} onType={this.onType} />
-                <SignUpButton />
             </disabledContext.Provider>
         </FormLayout>
     }
