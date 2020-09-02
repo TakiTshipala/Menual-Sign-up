@@ -12,6 +12,7 @@ import "./Styles/styles.scss";
 import OrField from './Or'
 import AlternativeSignupField from './Alternativesignup'
 import DividerField from './Divider'
+import AlreadyField from './Signin'
 
 
 class Form extends React.Component {
@@ -29,7 +30,7 @@ class Form extends React.Component {
     onType = (field, input) => this.setState({ [field]: input })
 
     render() {
-        const { email, fullname, password, surname, terms, or, alternative, divider } = this.state
+        const { email, fullname, password, surname, terms, or, alternative, divider, already } = this.state
         return <FormLayout>
             <h1 className = "Signup">Sign up</h1>
             <disabledContext.Provider value={{ disabled: !isValidatedForm(this.state) }}>
